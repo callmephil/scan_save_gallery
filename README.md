@@ -23,29 +23,3 @@ A simple Android Flutter app for scanning documents using the device camera and 
    ```sh
    flutter run
    ```
-
-## Android Setup
-
-- The app requests camera and storage permissions at runtime.
-- `minSdkVersion` should be at least 21.
-- `android:requestLegacyExternalStorage="true"` is set for compatibility.
-
-## iOS Setup
-
-- Requires iOS 13+ (VisionKit support).
-- Add the following to your `Info.plist`:
-  ```xml
-  <key>NSCameraUsageDescription</key>
-  <string>We need camera access to scan documents.</string>
-  <key>NSPhotoLibraryAddUsageDescription</key>
-  <string>We need photo library access to save scanned images.</string>
-  ```
-
-## Code Style & Analysis
-
-- Uses `very_good_analysis` and DCM for strict linting.
-- Run `make analyze` to check for warnings (0 warning policy).
-
-## License
-
-MIT
